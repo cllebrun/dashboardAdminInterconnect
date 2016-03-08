@@ -1,0 +1,61 @@
+[{
+	"id": "1",
+	"name": "Food & Drink",
+	"description": "Food & Drink",
+	"grouping": "Local"
+}, {
+	"id": "2",
+	"name": "Health & Fitness",
+	"description": "Health & Fitness",
+	"grouping": "Local"
+}, {
+	"id": "3",
+	"name": "Things To Do",
+	"description": "Things To Do",
+	"grouping": "Local"
+}, {
+	"id": "4",
+	"name": "Shopping",
+	"description": "Shopping",
+	"grouping": "Local"
+}, {
+	"id": "5",
+	"name": "Beauty & Spas",
+	"description": "Beauty & Spas",
+	"grouping": "Local"
+}, {
+	"id": "6",
+	"name": "Health & Beauty",
+	"description": "Health & Beauty",
+	"grouping": "Area"
+}, {
+	"id": "7",
+	"name": "Electronics",
+	"description": "Electronics",
+	"grouping": "Area"
+}, {
+	"id": "8",
+	"name": "Sports & Outdoors",
+	"description": "Sports & Outdoors",
+	"grouping": "Area"
+}, {
+	"id": "9",
+	"name": "Women's Fashion",
+	"description": "Women's Fashion",
+	"grouping": "Local"
+}, {
+	"id": "10",
+	"name": "Men's Fashion",
+	"description": "Men's Fashion",
+	"grouping": "Local"
+}, {
+	"id": "11",
+	"name": "Jewelry & Watches",
+	"description": "Jewelry & Watches",
+	"grouping": "Local"
+}, {
+	"id": "12",
+	"name": "Night Out",
+	"description": "Night Out",
+	"grouping": "Area"
+}]

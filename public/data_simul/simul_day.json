@@ -1,0 +1,14 @@
+[{
+	"id": "1",
+	"Loudness": "0",
+	"Power": "0",
+	"Motion": "0",
+	"v_bat": "0",
+	"State": "0",
+	"v_iphoto": "0",
+	"v_vphoto": "0",
+	"aqi_o3": "0",
+	"aqi_co": "0",
+	"aqi_pm5": "0",
+	"aqi_pm10": "0"
+}, ]
