@@ -114,12 +114,10 @@ app.get('/api/forecast/hourly', function(req, res) {
 app.use('/',index);
 
 app.use(function(req, res, next) {
-    req.session.api_key ="a-3ru070-dps4vmapsc";
-    req.session.auth_token="zkta-xjiyGb7ZuYCFp";
     if(req.session.api_key)
-    res.redirect("/dashboard");
+    res.redirect('index.html');
   else
-    res.redirect('/login');
+    res.redirect('login.html');
 });
 
 /// error handlers

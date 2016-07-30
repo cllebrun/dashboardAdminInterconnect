@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sb-admin-index.css" rel="stylesheet">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+    <title>Connected Lamp Poles</title>
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            </button>
+            <a class="navbar-brand" href="index.html">Connected Lamps General Admin</a>
+            
+            
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" >Traffic: 25000 p</a>
+                </li>
+                <li>
+                    <a class="page-scroll" >Energy: 20W</a>
+                </li>
+                <li>
+                    <a class="page-scroll" >AQI: 10 (O3), 36 (CO), 19 (PM25), 12 (PM10)</a>
+                </li>
+                <li>
+                    <a class="page-scroll" > </a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+             <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a><i class="fa fa-fw fa-dashboard"></i> Real time <input data-switch-set="state" data-switch-value="true" id="rt" name="realtime-switch" type="checkbox" unchecked data-size="mini"> </a>
+                </li>
+                <li>
+                    <a><i class="fa fa-fw fa-arrows-v"></i> Simul Night <input id="sn" type="checkbox" name="night_switch" unchecked data-size="mini"></a>
+                <li>
+                    <a><i class="fa fa-fw fa-arrows-v"></i> Simul Day <input id="sd" type="checkbox" name="day_switch" unchecked data-size="mini"> </a>
+                </li>
+                <li>
+                    <a ><button id="bt" type="button" class="btn btn-info" >Cognos Report</button></a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div id="map"></div>
+
+
+    <!-- Bootstrap Core JavaScript -->
+
+    <script type= "text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/bootstrap-switch.js"></script>
+    <script src="js/uicontroller.js"></script>
+    <script type= "text/javascript" src="js/general.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl2bATCgWMO5hCmNUX8BXJlZjMPU8wRTs&signed_in=true&callback=initMap"></script>
+
+  </body>
+</html>

@@ -11,12 +11,12 @@
 *******************************************************************************/
 
 // Main UI 
-var orgId = "3ru070";
+var orgId = "";
 var orgName = "";
 //flag for historian
 var isHistorian = false;
-var api_key ="a-3ru070-dps4vmapsc";
-var auth_token = "zkta-xjiyGb7ZuYCFp";
+var api_key ="";
+var auth_token = "";
 var devices = [];
 var realtime;
 var simulstate ="realtime";
@@ -40,7 +40,7 @@ function loadData() {
 $.ajax
 ({
 	type: "GET",
-	url: "/api/v0001/organization",
+	url: "/api/v0002/organization",
 	dataType: 'json',
 	async: false,
 
@@ -60,8 +60,8 @@ $.ajax
 		}
 		console.log("Not able to fetch the Organization details");
 		console.log(xhr.status);
-		console.log(thrownError);
-	}
+		console.log(thrownError);*/
+
 	
 });
 
@@ -69,14 +69,14 @@ $.ajax
 $.ajax
 ({
 	type: "GET",
-	url: "/api/v0001/organization/getdata",
+	url: "/api/v0002/organization/getdevices",
 	dataType: 'json',
 	async: true,
 	success: function (data, status, jq){
 		console.log("success");
 		
 		realtime.plotRealtimeGraph();
-		/*devices = data;
+		devices = data;
 		for(var d in devices){
 			$("#deviceslist").append("<option value="+devices[d].uuid+">"+devices[d].id+"</option>");
 		}*/
@@ -87,6 +87,11 @@ $.ajax
 	}
 });
 
+function simulData(){
+	loadData();
+	realtime = new Simul(simulstate);
+}
+realtime.plotRealtimeGraph();
 
 
 

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Connected Lamp Poles</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <img src="images/IoTLogoGrey.png" alt="IoTF Icon" class="ioticon"/><h1 class="iottext iothead">IBM Watson IoT Platform</h1><br/><br/>
+    <div class="logintext">Enter an API Token and authentication token to visualise the data send from registered devices in a single Internet of Things Foundation organization</div>
+    <form role="form" action="/login" method="post" class="pure-form">
+      <fieldset>
+          <!--label(for='api_key') API Key-->
+          <input type="text" id="api_key" name="api_key" placeholder="API Key" required="required" class="signInputs"/>
+          <!--label(for='authToken') Auth Token-->
+          <input type="password" id="authToken" name="auth_token" placeholder="Auth Token" required="required" class="signInputs"/>
+          <button type="submit" class="signButton">Go</button>
+      </fieldset>
+    </form>
+
+
+</body>
+
+</html>

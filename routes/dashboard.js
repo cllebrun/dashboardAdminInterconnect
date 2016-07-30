@@ -16,7 +16,7 @@ var router = express.Router();
 /* GET realtime page. */
 router.get('/', function(req, res) {
 
-	res.render('index', { title: 'Dashboard IoT' });
+	res.render('dashboard', { title: 'Dashboard IoT' });
 });
 
 

@@ -24,8 +24,6 @@ router.use(function(req, res, next) {
 	res.header('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
 	
 	//check to see if we are in Bluemix and if we are bound to IoT service	
-	req.session.api_key ="a-3ru070-dps4vmapsc";
-	req.session.auth_token="zkta-xjiyGb7ZuYCFp";	
 	
 	if (! req.session.api_key && process.env.VCAP_SERVICES && req.path.indexOf('login') === -1)
 	{
@@ -38,7 +36,7 @@ router.use(function(req, res, next) {
 			res.redirect("/dashboard");
 		} else {
 			//no service found, so redirect to login page
-			//res.redirect("/login");
+			res.redirect("/login");
 		}
 	}
 	// for api calls, send 401 code
@@ -58,7 +56,7 @@ router.use('/',auth_routes);
 //dashboard routes
 router.use('/dashboard', dashboard_routes);
 //proxy api routes TODO: remove this after datapower handles the CORS requests
-router.use('/api/v0001',api_routes);
+router.use('/api/v0002',api_routes);
 
 function getAuthFromVCAP(VCAP_SERVICES) {
 
